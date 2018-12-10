@@ -6,54 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".activity.VisualizarActivity"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:padding="5dp"
+    >
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nome"
-        android:textStyle="bold"/>
+        android:text="Nome:"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtNome"
-        android:textStyle="bold"/>
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Data de Lançamento"
-        android:textStyle="bold"/>
+        android:text="Data de Lançamento:"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtDtLancamento"
-        android:textStyle="bold"/>
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Placa"
-        android:textStyle="bold"/>
+        android:text="Placa:"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtPlaca"
-        android:textStyle="bold"/>
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fabricante"
-        android:textStyle="bold"/>
+        android:text="Fabricante:"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtFabricante"
-        android:textStyle="bold"/>
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        />
 
 </LinearLayout>

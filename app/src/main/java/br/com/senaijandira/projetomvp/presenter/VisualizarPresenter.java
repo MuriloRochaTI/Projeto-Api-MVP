@@ -1,6 +1,8 @@
 package br.com.senaijandira.projetomvp.presenter;
 
 
+import android.util.Log;
+
 import br.com.senaijandira.projetomvp.activity.VisualizarActivity;
 import br.com.senaijandira.projetomvp.model.Carro;
 import br.com.senaijandira.projetomvp.service.CarroService;
@@ -30,12 +32,14 @@ public class VisualizarPresenter {
 
                 Carro al = response.body();
                 view.mostrarDadosCarro(al);
+                Log.d("SUCESSO!", "String");
             }
 
             @Override
             public void onFailure(Call<Carro> call, Throwable t) {
-                t.printStackTrace();
+                Log.d("SUCESSO!", t.getMessage());
             }
+
         });
 
     }

@@ -35,7 +35,7 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_visualizar);
+        setContentView(R.layout.activity_cadastro);
 
         //Instância do presenter
         presenter = new CadastroPresenter(this, service);
@@ -61,11 +61,15 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
         Carro carro = new Carro();
 
         carro.setNome(nome);
+
         carro.setDataLancamento(dataFormatada);
+
+
         carro.setPlaca(Integer.parseInt(placa));
         carro.setFabricante(fabricante);
 
         presenter.cadastrarCarro(carro);
+
 
     }
 
@@ -92,7 +96,7 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView 
         alert.show();
     }
 
-    //ABRIR O CALENDÁRIO
+    //ABRIR CALENDÁRIO
     public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
         @Override

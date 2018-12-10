@@ -31,7 +31,7 @@ public class Carro {
         return dataLancamento;
     }
 
-    public void setDataLancamento(int dataNascimento) {
+    public void setDataLancamento(int dataLancamento) {
         this.dataLancamento = dataLancamento;
     }
 
@@ -50,7 +50,5 @@ public class Carro {
     public void setFabricante(String fabricante) {
         this.fabricante = fabricante;
     }
-
-
 
 }

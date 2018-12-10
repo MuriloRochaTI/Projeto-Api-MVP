@@ -14,16 +14,17 @@ public interface CarroService {
 
     String URL_BASE = "http://10.0.2.2:5002/";
 
+    //visualizar carros
     @GET("/carros")
     Call<List<Carro>> obterCarros();
 
-    @GET("/carro/{id}")
+    //mostrar dados do carro
+    @GET("/carros/{id}")
     Call<Carro> obterCarroPorId(@Path("id") int id);
 
-    //Call = chamada; ApiResult = sucesso, msg;
-    @POST("/novo")
+    //add novo carro
+    @POST("/carro/novo")
     Call<ApiResult> cadastrarCarro(@Body Carro carro);
-
 }
 
 

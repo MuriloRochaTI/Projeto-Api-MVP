@@ -53,10 +53,6 @@ public class VisualizarActivity extends AppCompatActivity implements VisualizarC
         txtPlaca.setText(carro.getPlaca()+"");
         txtDtLancamento.setText(util.convertToString(carro.getDataLancamento()));
 
-
-
     }
-
-
 
 }
